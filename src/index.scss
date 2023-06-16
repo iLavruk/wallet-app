@@ -1,0 +1,184 @@
+$color_1: #121212;
+$color_2: #000000;
+$color_3: #8f8f93;
+$color_4: #fefeff;
+$color_5: #c3c3c4;
+$color_6: #474747;
+$font-family_1: "Open Sans", sans-serif;
+$font-family_2: "Baloo 2", cursive;
+$background-color_1: #f3f3f7;
+$background-color_2: #ffffff;
+$background-color_3: #efefef;
+$background-color_4: #585858;
+
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap";
+/* products */
+body {
+	margin: 10px;
+	font-family: $font-family_1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $background-color_1;
+}
+h1, h2, h3, h4 {
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	max-width: 768px;
+	margin: auto;
+}
+.row {
+	padding: 0;
+}
+.col {
+	padding: 0;
+}
+.block {
+	position: relative;
+	margin: 8px 4px;
+	padding: 8px 15px 4px;
+	background-color: $background-color_2;
+	border-radius: 10px;
+}
+.block-equal-height {
+	height: 92%;
+}
+.block-title {
+	font-size: 16px;
+	color: $color_1;
+}
+.card-balance {
+	font-family: $font-family_2;
+	font-size: 30px;
+	font-weight: 700;
+	color: $color_2;
+}
+.description {
+	font-size: 13px;
+	color: $color_3;
+}
+.check-block {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+.fa-check {
+	color: $color_2;
+	font-size: 30px;
+}
+.circle-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	background-color: $background-color_3;
+	border-radius: 50%;
+	border: 1px solid #e7e7e9;
+}
+.square-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 55px;
+	height: 55px;
+	background-color: $background-color_4;
+	border-radius: 5px;
+}
+.icons {
+	color: $color_4;
+	font-size: 30px;
+}
+.arrow-icon {
+	color: $color_5;
+	font-size: 18px;
+}
+.big-block-title {
+	padding: 0 5px;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+}
+.block-latest-transactions {
+	padding: 10px 0;
+	border-bottom: 1px solid #f1f1f1;
+	&:last-child {
+		border-bottom: none;
+	}
+	.short-text {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+.product-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.product-entry-block {
+	width: 70%;
+	margin-top: -5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.brand-title {
+	font-family: $font-family_2;
+	font-size: 20px;
+	font-weight: 600;
+	color: $color_6;
+}
+.sum {
+	font-family: $font-family_2;
+	font-size: 16px;
+	font-weight: 500;
+	color: $color_1;
+}
+.block-deposit {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	.deposit {
+		padding: 0px 5px;
+		background-color: $background-color_1;
+		border-radius: 5px;
+		font-family: $font-family_2;
+		line-height: 15px;
+	}
+}
+.block-transaction-detail {
+	padding: 50px 0 0;
+	.card-balance {
+		font-size: 40px;
+	}
+	.description {
+		&:last-child {
+			padding-top: 5px;
+		}
+	}
+	.block {
+		.description {
+			border-bottom: 1px solid #f1f1f1;
+		}
+	}
+}
+.subtitle {
+	font-family: $font-family_2;
+	font-size: 14px;
+	font-weight: 700;
+	color: $color_2;
+}
+.block-total {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
